@@ -12,7 +12,7 @@
 
     <artifactId>reports</artifactId>
     <packaging>pom</packaging>
-    <name>Project Reports</name>
+    <name>Project :: Reports</name>
 
     <properties>
         <maven.deploy.skip>true</maven.deploy.skip>

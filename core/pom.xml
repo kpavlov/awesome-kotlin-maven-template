@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>core</artifactId>
+    <name>Project :: Core</name>
 
     <dependencies>
         <dependency>

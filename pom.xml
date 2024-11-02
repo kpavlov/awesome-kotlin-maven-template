@@ -8,8 +8,11 @@
     <artifactId>project-aggregator</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <name>Project :: Aggregator</name>
+
     <modules>
         <module>parent</module>
+        <module>bom</module>
         <module>core</module>
         <module>reports</module>
     </modules>
