@@ -25,6 +25,12 @@
                     <artifactId>maven-site-plugin</artifactId>
                     <version>3.21.0</version>
                 </plugin>
+                <plugin>
+                    <groupId>org.jetbrains.kotlinx</groupId>
+                    <artifactId>kover-maven-plugin</artifactId>
+                    <version>0.8.3</version>
+                    <extensions>true</extensions>
+                </plugin>
             </plugins>
         </pluginManagement>
         <plugins>
@@ -95,5 +101,15 @@
             </plugin>
         </plugins>
     </build>
+
+    <reporting>
+        <excludeDefaults>true</excludeDefaults>
+        <plugins>
+            <plugin>
+                <groupId>org.jetbrains.kotlinx</groupId>
+                <artifactId>kover-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </reporting>
 
 </project>

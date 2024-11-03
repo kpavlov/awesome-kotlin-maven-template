@@ -99,11 +99,6 @@
                     <artifactId>detekt-maven-plugin</artifactId>
                     <version>1.23.7</version>
                 </plugin>
-                <plugin>
-                    <groupId>org.jetbrains.kotlinx</groupId>
-                    <artifactId>kover-maven-plugin</artifactId>
-                    <version>0.9.0-RC</version>
-                </plugin>
             </plugins>
         </pluginManagement>
         <plugins>
@@ -141,7 +136,7 @@
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
-                    <argLine>@{argLine}</argLine>
+                    <argLine>@{argLine} -javaagent:${org.mockito:mockito-core:jar}</argLine>
                 </configuration>
             </plugin>
             <plugin>
@@ -194,17 +189,6 @@
             <version>${kotlin.version}</version>
         </dependency>
         <!-- Test Dependencies -->
-        <dependency>
-            <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-test-junit5</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-params</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
         <dependency>
             <groupId>com.willowtreeapps.assertk</groupId>
             <artifactId>assertk-jvm</artifactId>
