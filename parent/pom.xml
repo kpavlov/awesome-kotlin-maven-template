@@ -51,9 +51,6 @@
                     <configuration>
                         <args>
                             <arg>-Xjsr305=strict</arg>
-                            <arg>-progressive</arg>
-                            <arg>-no-stdlib</arg>
-                            <!-- <arg>-Werror</arg>-->
                         </args>
                         <javaParameters>true</javaParameters>
                     </configuration>
