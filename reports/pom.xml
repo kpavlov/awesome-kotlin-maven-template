@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>me.kpavlov.project</groupId>
-        <artifactId>project-aggregator</artifactId>
+        <artifactId>aggregator</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -16,6 +16,7 @@
 
     <properties>
         <maven.deploy.skip>true</maven.deploy.skip>
+        <maven.javadoc.skip>true</maven.javadoc.skip>
     </properties>
 
     <dependencies>
@@ -36,6 +37,12 @@
                         <id>kover-xml</id>
                         <goals>
                             <goal>report-xml</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>kover-log</id>
+                        <goals>
+                            <goal>log</goal>
                         </goals>
                     </execution>
                     <execution>
