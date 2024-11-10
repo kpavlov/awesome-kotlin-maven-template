@@ -4,11 +4,12 @@ import kotlinx.coroutines.coroutineScope
 
 class Sample {
     /**
-     * Returns a greeting message.
+     * Returns a greeting message with the given name.
      *
-     * @return A string containing the greeting message "Hi".
+     * @param name The name of the person to greet.
+     * @return A greeting message.
      */
-    fun sayHi(): String = "Hi"
+    fun sayHi(name: String): String = "Hi, $name"
 
     /**
      * Asynchronously obtains a response from the provided supplier function.

@@ -18,7 +18,7 @@ internal class SampleTest {
 
     @Test
     fun `Should assert Hi`() {
-        assertThat(subject.sayHi()).isEqualTo("Hi")
+        assertThat(subject.sayHi("Bob")).isEqualTo("Hi, Bob")
     }
 
     @Test
