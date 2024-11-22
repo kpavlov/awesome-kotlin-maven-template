@@ -214,12 +214,17 @@
                             <ktlint/>
                         </kotlin>
                         <markdown>
-                            <includes> <!-- You have to set the target manually -->
+                            <includes>
+                                <!-- You have to set the target manually -->
                                 <include>**/*.md</include>
                             </includes>
                             <flexmark/>
                         </markdown>
                         <pom>
+                            <includes>
+                                <!-- You have to set the target manually -->
+                                <include>**/pom.xml</include>
+                            </includes>
                             <sortPom>
                                 <nrOfIndentSpace>4</nrOfIndentSpace>
                                 <expandEmptyElements>false</expandEmptyElements>
