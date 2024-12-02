@@ -1,6 +1,11 @@
 build:
 	  mvn clean verify site
 
+apidocs:
+	  mvn clean dokka:dokka -pl !reports && \
+    mkdir -p target/docs && \
+		cp -R core/target/dokka target/docs/api
+
 lint:prepare
 	  ktlint && \
     mvn spotless:check
