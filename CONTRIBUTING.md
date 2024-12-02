@@ -17,3 +17,24 @@ Thank you for investing your time and effort in contributing to my project, I ap
 - **Discuss Large Features**: Large features should be discussed with maintainers before implementation.
 - **Thread Safety**: Ensure that the code you write is thread-safe.
 
+## Using the Makefile
+
+The [`Makefile`](Makefile) includes several helpful targets to make your development process more efficient:
+
+- **`build`**:
+  - Runs all tests, verifies the project, and generates site documentation.
+
+- **`apidocs`**:
+  - Generates API documentation using Dokka and places it in `target/docs/api`.
+
+- **`lint`**:
+  - Prepares the environment and checks code style using `ktlint` and Maven `spotless:check`.
+
+- **`format`**:
+  - Formats the code using `ktlint --format` and applies `spotless` and OpenRewrite best practices.
+
+- **`prepare`**:
+  - Installs `ktlint` via Homebrew if not already installed.
+
+- **`all`**:
+  - Executes `format`, `lint`, and `build` sequentially.
