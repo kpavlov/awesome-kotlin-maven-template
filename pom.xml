@@ -55,7 +55,7 @@
         <kotlinx.version>1.11.0</kotlinx.version>
         <mockito-kotlin.version>6.3.0</mockito-kotlin.version>
         <mockito.version>5.23.0</mockito.version>
-        <slf4j.version>2.0.17</slf4j.version>
+        <slf4j.version>2.0.18</slf4j.version>
         <wiremock.version>3.9.2</wiremock.version>
     </properties>
 
